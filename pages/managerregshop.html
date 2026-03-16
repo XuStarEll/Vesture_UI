@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vesture Manager view</title>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center p-10 font-sans
+            bg-linear-to-br from-sky-100 via-blue-100 to-amber-50">
+
+  <div class="relative w-full max-w-5xl min-h-130 overflow-hidden rounded-2xl
+              bg-white/75 border border-white/60 shadow-2xl backdrop-blur-lg
+              flex">
+
+    <!-- Left panel (same theme, different message) -->
+    <div class="hidden md:flex w-2/5 items-center justify-center px-10
+                bg-linear-to-br from-sky-200 via-blue-200 to-amber-100 relative">
+
+      
+      <div class="relative z-10">
+        <h2 class="text-4xl font-extrabold tracking-wide text-slate-800 leading-tight">
+          Create your shop😊
+        </h2>
+        <p class="mt-4 text-slate-700/70 max-w-sm leading-relaxed">
+          Create your shop easily and start exploring your store, products, and new arrivals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right panel (form) -->
+    <div class="w-full md:w-3/5 ml-auto px-8 md:px-12 py-12 flex flex-col justify-center">
+
+      <div class="text-3xl font-semibold text-slate-800 mb-8 text-center md:text-left">
+        Shop Registeration
+      </div>
+
+      <form action="myproduct.html" method="get" class="w-full">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Shop Name -->
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Shop Name</span>
+            <input type="text" name="shopname" placeholder="Enter your shop name" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-sky-400 focus:ring-2 focus:ring-sky-200 transition">
+          </div>
+
+          <!-- Type (Dropdown) -->
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Type</span>
+            <select name="shop_type" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                   text-slate-800 outline-none
+                   focus:border-blue-400 focus:ring-2 focus:ring-blue-200 transition">
+              <option value="" disabled selected>Select type</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+              <option value="children">Children</option>
+              <option value="general">General</option>
+            </select>
+          </div>
+
+          <!-- Manager ID -->
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Manager ID</span>
+      <input type="hidden" name="manager_id" placeholder="Enter manager id (e.g. 12)" required
+        class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+               text-slate-800 placeholder-slate-400 outline-none
+               focus:border-amber-300 focus:ring-2 focus:ring-amber-200 transition">
+          </div>
+
+          <!-- Rating -->
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Rating</span>
+      <input type="number" name="rating" step="1" min="0" max="5" placeholder="0 - 5 (optional)"
+        class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+               text-slate-800 placeholder-slate-400 outline-none
+               focus:border-sky-400 focus:ring-2 focus:ring-sky-200 transition">
+          </div>
+
+          <!-- Address -->
+          <div class="space-y-2 md:col-span-2">
+      <span class="text-sm font-medium text-slate-700">Address</span>
+      <input type="text" name="address" placeholder="Enter shop address" required
+        class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+               text-slate-800 placeholder-slate-400 outline-none
+               focus:border-blue-400 focus:ring-2 focus:ring-blue-200 transition">
+          </div>
+
+          <!-- Comment -->
+          <div class="space-y-2 md:col-span-2">
+      <span class="text-sm font-medium text-slate-700">Comment</span>
+      <textarea name="comment" rows="4" placeholder="Write a short comment (optional)"
+        class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+               text-slate-800 placeholder-slate-400 outline-none resize-none
+               focus:border-amber-300 focus:ring-2 focus:ring-amber-200 transition"></textarea>
+          </div>
+
+        </div>
+
+        <!-- Submit -->
+        <div class="mt-10">
+          <input type="submit" value="Create"
+            class="w-full rounded-full py-3.5 font-semibold text-slate-800 shadow-md
+                   bg-linear-to-r from-sky-200 via-blue-200 to-amber-200
+                   hover:brightness-95 transition cursor-pointer">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

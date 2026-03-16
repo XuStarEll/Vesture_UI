@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vesture Sign Up</title>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center p-10 font-sans
+            bg-linear-to-br from-sky-100 via-blue-100 to-amber-50">
+
+  <div class="relative w-full max-w-5xl min-h-130 overflow-hidden rounded-2xl
+              bg-white/75 border border-white/60 shadow-2xl backdrop-blur-lg
+              flex">
+
+    <!-- Left panel (same theme, different message) -->
+    <div class="hidden md:flex w-2/5 items-center justify-center px-10
+                bg-linear-to-br from-sky-200 via-blue-200 to-amber-100 relative">
+
+      
+      <div class="relative z-10">
+        <h2 class="text-4xl font-extrabold tracking-wide text-slate-800 leading-tight">
+          Join Vesture
+        </h2>
+        <p class="mt-4 text-slate-700/70 max-w-sm leading-relaxed">
+          Create your account and start exploring stores, outfits, and new arrivals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right panel (form) -->
+    <div class="w-full md:w-3/5 ml-auto px-8 md:px-12 py-12 flex flex-col justify-center">
+
+      <div class="text-3xl font-semibold text-slate-800 mb-8 text-center md:text-left">
+        Registeration
+      </div>
+
+      <form id="signupForm" action="testreg.html" method="post" class="w-full">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-sky-400 focus:ring-2 focus:ring-sky-200 transition">
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Username</span>
+            <input type="text" placeholder="Enter your username" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-blue-400 focus:ring-2 focus:ring-blue-200 transition">
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-sky-400 focus:ring-2 focus:ring-sky-200 transition">
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Address</span>
+            <input type="text" placeholder="Enter your address" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-amber-300 focus:ring-2 focus:ring-amber-200 transition">
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-blue-400 focus:ring-2 focus:ring-blue-200 transition">
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-sm font-medium text-slate-700">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required
+              class="w-full rounded-xl bg-white/60 border border-white/70 px-4 py-3
+                     text-slate-800 placeholder-slate-400 outline-none
+                     focus:border-sky-400 focus:ring-2 focus:ring-sky-200 transition">
+          </div>
+
+        </div>
+
+        <!-- Gender -->
+        <div class="mt-6">
+          <p class="mb-2 font-medium text-slate-700">Gender</p>
+
+          <div class="flex flex-wrap gap-6 text-slate-700">
+            <div class="flex items-center gap-2">
+              <input id="gender_male" type="radio" name="gender" value="male" required>
+              <label for="gender_male" class="cursor-pointer select-none">Male</label>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <input id="gender_female" type="radio" name="gender" value="female">
+              <label for="gender_female" class="cursor-pointer select-none">Female</label>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <input id="gender_n" type="radio" name="gender" value="na">
+              <label for="gender_n" class="cursor-pointer select-none">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role -->
+        <div class="mt-6">
+          <p class="mb-2 font-medium text-slate-700">Role</p>
+
+          <div class="flex flex-wrap gap-6 text-slate-700">
+            <div class="flex items-center gap-2">
+              <input id="role-customer" type="radio" name="role" value="customer" required>
+              <label for="role-customer" class="cursor-pointer select-none">Customer</label>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <input id="role-manager" type="radio" name="role" value="manager">
+              <label for="role-manager" class="cursor-pointer select-none">Manager</label>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Submit -->
+        <div class="mt-10">
+          <input type="submit" value="Register"
+            class="w-full rounded-full py-3.5 font-semibold text-slate-800 shadow-md
+                   bg-linear-to-r from-sky-200 via-blue-200 to-amber-200
+                   hover:brightness-95 transition cursor-pointer">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+<!--<script>
+  const form = document.getElementById("signupForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    const role = document.querySelector('input[name="role"]:checked')?.value;
+
+    if (!role) {
+      alert("Please choose a role.");
+      return;
+    }
+
+    // Redirect based on role
+    if (role === "manager") {
+      window.location.href = "managerregshop.html"; //it will go manager sho register
+    } else {
+      window.location.href = "customerview.html"; //it will go to homepage
+    }
+  });
+</script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Vesture Login</title>
+</head>
+<body>
+  <div class="min-h-screen flex items-center justify-center p-10 font-sans
+            bg-linear-to-br from-sky-100 via-blue-100 to-amber-50">
+
+  <form action="testlogin.html" method="post"
+        class="relative w-full max-w-4xl min-h-105 overflow-hidden rounded-2xl
+               bg-white/75 border border-white/60 shadow-2xl backdrop-blur-lg
+               flex">
+
+    <!-- LEFT SIDE : WELCOME -->
+    <div class="hidden md:flex w-1/2 items-center justify-center p-10
+                bg-linear-to-br from-sky-200 via-blue-200 to-amber-100">
+      <h2 class="text-3xl font-extrabold tracking-wide text-slate-800">
+        Welcome to Vesture
+      </h2>
+    </div>
+
+    <!-- RIGHT SIDE : LOGIN -->
+    <div class="w-full md:w-1/2 flex flex-col items-center justify-center
+                px-10 py-14">
+
+      <h1 class="text-3xl font-semibold text-slate-800 mb-12">
+        Login
+      </h1>
+
+      <div class="w-full max-w-sm space-y-10">
+
+        <input type="email" name="email" placeholder="Email" required
+          class="w-full bg-transparent border-b border-slate-300 py-3
+                 text-slate-800 placeholder-slate-400 outline-none
+                 focus:border-sky-400 transition">
+
+        <input type="password" name="password" placeholder="Password" required
+          class="w-full bg-transparent border-b border-slate-300 py-3
+                 text-slate-800 placeholder-slate-400 outline-none
+                 focus:border-blue-400 transition">
+
+        <div class="flex items-center justify-between text-sm text-slate-600">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="accent-sky-500">
+            Remember me
+          </label>
+
+          <a href="#" class="text-blue-600 hover:text-sky-600 transition">
+            forgot password?
+          </a>
+        </div>
+
+        <button type="submit"
+          class="w-full rounded-full py-3.5 font-semibold text-slate-800 shadow-md
+                 bg-linear-to-r from-sky-200 via-blue-200 to-amber-200
+                 hover:brightness-95 transition">
+          login
+        </button>
+
+        <p class="text-center text-sm text-slate-600">
+          Don't have an account?
+          <a href="testreg.html" class="text-blue-700 hover:text-sky-700 font-medium">
+            Register
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+  </form>
+</div>
+
+
+</body>
+</html>
